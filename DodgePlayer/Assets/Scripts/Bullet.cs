@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    Rigidbody bulletRigidbody;
     public float speed = 8f;
-
+    private Rigidbody bulletRigidbody;
     public int damage = 30;
 
     // Start is called before the first frame update
     void Start()
     {
         bulletRigidbody = GetComponent<Rigidbody>();
-        bulletRigidbody.velocity = transform.forward * speed;
+        bulletRigidbody.velocity = transform.forward * 8f;
 
         Destroy(gameObject, 3f);
     }
@@ -24,19 +23,19 @@ public class Bullet : MonoBehaviour
         
     }
 
-
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
-            PlayerController player = other.GetComponent<PlayerController>();
+            PlayerController playerController = other.GetComponent<PlayerController>();
 
-            if(player != null)
+            if(playerController != null)
             {
-                player.GetDamage(damage);
-                Destroy(gameObject);
-                //player.Die();
+                playerController.GetDamage(damage);
+                //playerController.Die();
             }
+
+            Destroy(gameObject);
         }
     }
 }

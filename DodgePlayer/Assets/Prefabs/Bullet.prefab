@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6808088504871517833
+--- !u!1 &2333578810893487203
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6808088504871517837}
-  - component: {fileID: 6808088504871517836}
-  - component: {fileID: 6808088504871517839}
-  - component: {fileID: 6808088504871517838}
-  - component: {fileID: 6808088504871517842}
-  - component: {fileID: 1323518993}
+  - component: {fileID: 2333578810893487230}
+  - component: {fileID: 2333578810893487231}
+  - component: {fileID: 2333578810893487200}
+  - component: {fileID: 2333578810893487201}
+  - component: {fileID: 2333578810893487202}
+  - component: {fileID: 172542596706466697}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6808088504871517837
+--- !u!4 &2333578810893487230
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6808088504871517833}
+  m_GameObject: {fileID: 2333578810893487203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
@@ -35,21 +35,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6808088504871517836
+--- !u!33 &2333578810893487231
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6808088504871517833}
+  m_GameObject: {fileID: 2333578810893487203}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6808088504871517839
+--- !u!23 &2333578810893487200
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6808088504871517833}
+  m_GameObject: {fileID: 2333578810893487203}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 257800caf67592241a3e7cf6f2e8b0f0, type: 2}
+  - {fileID: 2100000, guid: dc8242e96e2f8b74ebe44a506c86a8ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,26 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6808088504871517838
+--- !u!135 &2333578810893487201
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6808088504871517833}
+  m_GameObject: {fileID: 2333578810893487203}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6808088504871517842
+--- !u!54 &2333578810893487202
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6808088504871517833}
+  m_GameObject: {fileID: 2333578810893487203}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -113,16 +113,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1323518993
+--- !u!114 &172542596706466697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6808088504871517833}
+  m_GameObject: {fileID: 2333578810893487203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77787dc4f1b4f434cb714dfef5863c14, type: 3}
+  m_Script: {fileID: 11500000, guid: 431c9b0e510d7324bae0974b5f19f22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+  damage: 30

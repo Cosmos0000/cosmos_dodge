@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class HPBar : MonoBehaviour
 {
     public Image hpbar;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +21,7 @@ public class HPBar : MonoBehaviour
     public void SetHP(int hp)
     {
         hpbar.fillAmount = (float)hp / 100f;
+        
     }
+
 }
